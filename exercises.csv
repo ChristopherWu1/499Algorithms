@@ -1,0 +1,60 @@
+Name,Equipment Type,General Target Area,"Exercise Category (Strength , Aerobic , Flexibility , Balance )","Difficulty( Beginner, Intermediate, Advanced )","Compound, Isolation "
+Back Squat,"bodyweight , barbell, kettlebell , dumbell","Lower Body, Quadriceps",Strength ,Beginner ,Compound
+Front Squat,"bodyweight , barbell , kettlebell , dumbell","Lower Body, Quadriceps",Strength ,Beginner ,Compound
+Pause Squat,"bodyweight , barbell , kettlebell , dumbell","Lower Body, Quadriceps",Strength ,Intermediete ,Compound
+Zercher Squat,"bodyweight , barbell, kettlebell , dumbell","Lower Body, Quadriceps",Strength ,Advanced,Compound
+Split Squats,"bodyweight , barbell, kettlebell , dumbell","Lower Body, Quadriceps",Strength ,Advanced,Compound
+Romanian Deadlift,"bodyweight , barbell, kettlebell , dumbell","Lower Body, Quadriceps",Strength ,Intermediete ,Compound
+Goblet Squat,"bodyweight , barbell, kettlebell , dumbell","Lower Body, Quadriceps",Strength ,Beginner ,Compound
+Leg Press,machine,"Lower Body, Quadriceps",Strength ,Beginner ,Compound
+,,,,,
+Deadlift,"barbell, kettlebell, dumbell ","fullbody, lower ",Strength,Intermediete ,Compound
+Cable Pull Through,machine,"fullbody, lower ",Strength,Beginner ,Compound
+Sumo Deadlifts,barbell,"fullbody, lower ",Strength,Beginner ,Compound
+Trap Bar Deadlift,trap bar,"fullbody, lower ",Strength,Beginner ,Compound
+Kettle Bell Swings,kettlebell,"fullbody, lower ",Strength,Intermediete ,Compound
+,,,,,
+Barbell Row,barbell,"upperbody, back",Strength ,Intermediete ,Compound
+Pull-ups,"bar, machine","fullbody, back",Strength ,Beginner ,Compound
+Chin-ups,"bar, machine","fullbody, back",Strength ,Beginner ,Compound
+Face Pulls,machine,"upperbody, back",Strength ,Beginner ,Compound
+T-bar Rows ,barbell,"upperbody, back",Strength ,Intermediete ,Compound
+Lat Pulldown,machine,"upperbody, back",Strength ,Intermediete ,Isolation
+Bent Over Row,"barbell, kettlebell , dumbell","upperbody, back",Strength ,Beginner ,Compound
+Bench Press ,"barbell , dumbell","upperbody, chest",Strength ,Beginner ,Compound
+Incline Bench Press,"barbell , dumbell","upperbody, chest",Strength ,Beginner ,Compound
+Overhead Press,"barbell , dumbell, kettlebell","upperbody, shoulder",Strength ,Beginner ,Compound
+Push-ups,bodyweight,"upperbody, chest",Strength ,Beginner ,Compound
+Dips,"bodweight, machine, dumbell", core/abs,Strength ,Beginner ,Compound
+Ab Wheel Rollouts,ab-wheel, core/abs,Strength ,Beginner ,Compound
+Leg Raises,bodweight, core/ abs,Strength ,Beginner ,Isolation
+Bicep Curl,"barbell, kettlebell , dumbell",upperbody,Strength ,Beginner ,Isolation
+,,,,,
+Walking,"machine, none",fullbody ,Aerobic,Beginner ,
+Jogging,"machine, none",fullbody,Aerobic,Beginner ,
+Running,"machine, none",fullbody,Aerobic,Beginner ,
+Sprinting ,"machine, none",fullbody,Aerobic,Beginner ,
+Swimming,pool,fullbody,Aerobic,Beginner ,
+Biking,bike,fullbody,Aerobic,Beginner ,
+Stairmaster,machine,fullbody,Aerobic,Beginner ,
+Jump Rope,jump rope,fullbody,Aerobic,Beginner ,
+Rowing,machine,fullbody,Aerobic,Beginner ,
+,,,,,
+Knees to Chest,bodyweight,,Flexibility ,Beginner,
+Standing Quad Stretch,bodyweight,,Flexibility ,Beginner,
+Forward Lunge,bodyweight,,Flexibility ,Beginner,
+"Side Lunge
+",bodyweight,,Flexibility ,Beginner,
+Cross-Over,bodyweight,,Flexibility ,Beginner,
+Seat Straddle Lotus,bodyweight,,Flexibility ,Beginner,
+Piriformis Stretch,bodyweight,,Flexibility ,Beginner,
+Figure Four Stretch,bodyweight,,Flexibility ,Beginner,
+Tricep Stretch,bodyweight,,Flexibility ,Beginner,
+Frog Stretch,bodyweight,,Flexibility ,Beginner,
+Butterfly Stretch,bodyweight,,Flexibility ,Beginner,
+Side Bend Stretch,bodyweight,,Flexibility ,Beginner,
+Pectoral Stretch,bodyweight,,Flexibility ,Beginner,
+Lying Quad Stretch,bodyweight,,Flexibility ,Beginner,
+Pigeon Pose ,bodyweight,,Flexibility ,Beginner,
+Pretzel Stretch,bodyweight,,Flexibility ,Beginner,
+Downward Dog,bodyweight,,Flexibility ,Beginner,
