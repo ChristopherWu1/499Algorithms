@@ -1,25 +1,25 @@
-Name,Equipment Type,General Target Area,"Exercise Category (Strength , Aerobic , Flexibility , Balance )","Difficulty( Beginner, Intermediate, Advanced )","Compound, Isolation "
+Name,Equipment Type,General Target Area,Exercise Category,Difficulty,"Compound, Isolation "
 Back Squat,"bodyweight , barbell, kettlebell , dumbell","Lower Body, Quadriceps",Strength ,Beginner ,Compound
 Front Squat,"bodyweight , barbell , kettlebell , dumbell","Lower Body, Quadriceps",Strength ,Beginner ,Compound
-Pause Squat,"bodyweight , barbell , kettlebell , dumbell","Lower Body, Quadriceps",Strength ,Intermediete ,Compound
-Zercher Squat,"bodyweight , barbell, kettlebell , dumbell","Lower Body, Quadriceps",Strength ,Advanced,Compound
-Split Squats,"bodyweight , barbell, kettlebell , dumbell","Lower Body, Quadriceps",Strength ,Advanced,Compound
-Romanian Deadlift,"bodyweight , barbell, kettlebell , dumbell","Lower Body, Quadriceps",Strength ,Intermediete ,Compound
+Pause Squat,"bodyweight , barbell , kettlebell , dumbell","Lower Body, Quadriceps",Strength ,Intermediate ,Compound
+Zercher Squat,"bodyweight , barbell, kettlebell , dumbell","Lower Body, Quadriceps",Strength ,Advanced ,Compound
+Split Squats,"bodyweight , barbell, kettlebell , dumbell","Lower Body, Quadriceps",Strength ,Advanced ,Compound
+Romanian Deadlift,"bodyweight , barbell, kettlebell , dumbell","Lower Body, Quadriceps",Strength ,Intermediate ,Compound
 Goblet Squat,"bodyweight , barbell, kettlebell , dumbell","Lower Body, Quadriceps",Strength ,Beginner ,Compound
 Leg Press,machine,"Lower Body, Quadriceps",Strength ,Beginner ,Compound
 ,,,,,
-Deadlift,"barbell, kettlebell, dumbell ","fullbody, lower ",Strength,Intermediete ,Compound
+Deadlift,"barbell, kettlebell, dumbell ","fullbody, lower ",Strength,Intermediate ,Compound
 Cable Pull Through,machine,"fullbody, lower ",Strength,Beginner ,Compound
 Sumo Deadlifts,barbell,"fullbody, lower ",Strength,Beginner ,Compound
 Trap Bar Deadlift,trap bar,"fullbody, lower ",Strength,Beginner ,Compound
-Kettle Bell Swings,kettlebell,"fullbody, lower ",Strength,Intermediete ,Compound
+Kettle Bell Swings,kettlebell,"fullbody, lower ",Strength,Intermediate ,Compound
 ,,,,,
-Barbell Row,barbell,"upperbody, back",Strength ,Intermediete ,Compound
+Barbell Row,barbell,"upperbody, back",Strength ,Intermediate ,Compound
 Pull-ups,"bar, machine","fullbody, back",Strength ,Beginner ,Compound
 Chin-ups,"bar, machine","fullbody, back",Strength ,Beginner ,Compound
 Face Pulls,machine,"upperbody, back",Strength ,Beginner ,Compound
-T-bar Rows ,barbell,"upperbody, back",Strength ,Intermediete ,Compound
-Lat Pulldown,machine,"upperbody, back",Strength ,Intermediete ,Isolation
+T-bar Rows ,barbell,"upperbody, back",Strength ,Intermediate ,Compound
+Lat Pulldown,machine,"upperbody, back",Strength ,Intermediate ,Isolation
 Bent Over Row,"barbell, kettlebell , dumbell","upperbody, back",Strength ,Beginner ,Compound
 Bench Press ,"barbell , dumbell","upperbody, chest",Strength ,Beginner ,Compound
 Incline Bench Press,"barbell , dumbell","upperbody, chest",Strength ,Beginner ,Compound
