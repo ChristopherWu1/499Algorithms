@@ -11,9 +11,10 @@ import pandas as pd
 print('test')
 tf = TfidfVectorizer(analyzer='word',ngram_range=(1, 2),min_df=0, stop_words='english') #transforms text to feature vectors that can be used as input to estimator.
 exercises  = pd.read_csv('exercises.csv')
-exercises = exercises.dropna()
 
+#exercises = exercises.dropna()
 
+'''
 #gets value from general target area similarity
 tfidf_matrix = tf.fit_transform(exercises['General Target Area']) #gets if-idf values 
 cosine_sim = linear_kernel(tfidf_matrix, tfidf_matrix) #calculate a numeric quantity that denotes the similarity between two movies. Higher the cosine value, the more similar the terms are
@@ -43,65 +44,153 @@ titles = exercises['Name']
 indices = pd.Series(exercises.index, index = exercises['Name'])
 #print(indices)
 arr = ['Cable Pull Through','Kettle Bell Swings','Pull-ups']
+'''
+exercises =  pd.read_csv('exercises2.csv')
+exercises = exercises.drop(columns=['Location', 'Push or Pull', 'Equipment Type( bar ,bodyweight, barbell , machine , kettlebell, dumbell , specific )'])
+print(exercises)
+
+def create_cosine_similarities(categories,weight = None):
+    if weight == None:
+        weight = np.full(len(categories),1/len(categories))
+    
+    if len(categories) > 1:
+        print('multiple weights are involved')
+        sims = []
+        for x in categories:
+            tfidf_matrix = tf.fit_transform(exercises[x])
+            cosine_sim = linear_kernel(tfidf_matrix, tfidf_matrix)
+            sims.append(cosine_sim)
+        weighted_sim = sims[0] * weight[0]
+        theCount = 0
+        for x,y in zip(sims,weight):
+            if theCount > 0:
+                #print(x,y)
+                weighted_sim = weighted_sim +  (x * y)
+            theCount = theCount + 1
+        #weighted_sim = weighted_sim / len(sims)
+        return weighted_sim
+    elif categories[0] == 'Difficulty':
+        theList = exercises['Difficulty'].tolist()
+        #print(theList)
+        list2 = []
+        for x in theList:
+            #print(x[:-1])
+            if(x[-1].isspace()):
+                list2.append(x[:-1])
+            else:
+                list2.append(x)
+        #print(list2)
+        cosine_sim = convert_difficulty(list2)
+        return cosine_sim
+    else:
+        tfidf_matrix = tf.fit_transform(exercises[categories[0]]) #gets if-idf values
+        cosine_sim = linear_kernel(tfidf_matrix, tfidf_matrix) #calculate a numeric quantity that denotes the similarity between two movies. Higher the cosine value, the more similar the terms are
+        return cosine_sim
 
 def convert_difficulty(aList):
     return_list = []
-    print(aList)
+    #print(aList)
     for x in aList:
         element_list = []
-        print(element_list)
+       # print(element_list)
         for y in aList:
-            print(x,y)
+            #print(x,y)
             if x == 'Beginner' and y == 'Beginner':
-                print('same value, beginner')
+                #print('same value, beginner')
                 element_list.append(1.0)
             elif x == 'Intermediate' and y == 'Intermediate':
-                print('same value, inter')
+                #print('same value, inter')
                 element_list.append(1.0)
             elif x == 'Advanced' and y == 'Advanced':
-                print('same value, advanced')
+                #print('same value, advanced')
                 element_list.append(1.0)
             elif x == 'Beginner' and y == 'Intermediate':
-                print('different value')
+                #print('different value')
                 element_list.append(0.5)
             elif x == 'Beginner' and y == 'Advanced':
-                print('different value')
+                #print('different value')
                 element_list.append(0.25)
             elif x == 'Intermediate' and y == 'Beginner':
-                print('different value')
+                #print('different value')
                 element_list.append(0.5)
             elif x == 'Intermediate' and y == 'Advanced':#pontentially a problem
-                print('different value')
+                #print('different value')
                 element_list.append(0.5)
             elif x == 'Advanced' and y == 'Intermediate':
-                print('different value')
+                #print('different value')
                 element_list.append(0.5)
             elif x == 'Advanced' and y == 'Beginner':
-                print('different value')
+                #print('different value')
                 element_list.append(0.25)
-        print(element_list)
+        #print(element_list)
         return_list.append(element_list)
     return return_list
 
 
+print(create_cosine_similarities(['Target Area']))
+print('-------------------------------------')
+tfidf_matrix = tf.fit_transform(exercises['Target Area']) #gets if-idf values 
+cosine_sim = linear_kernel(tfidf_matrix, tfidf_matrix) #calculate a numeric quantity that denotes the similarity between two movies. Higher the cosine value, the more similar the terms are
+print(cosine_sim)
 
-print(exercises['Difficulty'])
-#print(type(exercises['Difficulty'].tolist()))
-#print(type(['Difficulty']))
 
-print(convert_difficulty(['Beginner','Intermediate','Advanced','Intermediate']))
+print('-------------------------------------')
+print(create_cosine_similarities(['Exercise Category'])[0])
+print('-------------------------------------')
+tfidf_matrix = tf.fit_transform(exercises['Exercise Category']) #gets if-idf values 
+cosine_sim = linear_kernel(tfidf_matrix, tfidf_matrix) #calculate a numeric quantity that denotes the similarity between two movies. Higher the cosine value, the more similar the terms are
+print(cosine_sim[0])        
+
+
+print('-------------------------------------')
+print(create_cosine_similarities(['Difficulty'])[0])
+print('-------------------------------------')
 theList = exercises['Difficulty'].tolist()
-print(theList)
+#print(theList)
 list2 = []
 for x in theList:
-    print(x[:-1])
+    #print(x[:-1])
     if(x[-1].isspace()):
         list2.append(x[:-1])
     else:
         list2.append(x)
-print(list2)
+        #print(list2)
+cosine_sim = convert_difficulty(list2)
+print(cosine_sim[0])
     
-print(convert_difficulty(list2))
+print('-------------------------------------')
+print(create_cosine_similarities(['Target Area','Exercise Category'],[0.5,0.5]))
+print('-------------------------------------')
+
+tfidf_matrix = tf.fit_transform(exercises['Target Area']) #gets if-idf values 
+cosine_sim = linear_kernel(tfidf_matrix, tfidf_matrix)
+tfidf_matrix = tf.fit_transform(exercises['Exercise Category']) #gets if-idf values 
+cosine_sim2 = linear_kernel(tfidf_matrix, tfidf_matrix)
+
+cosine_sim3 = (cosine_sim + cosine_sim2) / 2
+print(cosine_sim3)
+print('-------------------------------------')
+print(create_cosine_similarities(['Target Area','Exercise Category']))
+arr = [93,367,8]
+
+
+#print(exercises['Difficulty'])
+#print(type(exercises['Difficulty'].tolist()))
+#print(type(['Difficulty']))
+
+#print(convert_difficulty(['Beginner','Intermediate','Advanced','Intermediate']))
+theList = exercises['Difficulty'].tolist()
+#print(theList)
+list2 = []
+for x in theList:
+    #print(x[:-1])
+    if(x[-1].isspace()):
+        list2.append(x[:-1])
+    else:
+        list2.append(x)
+#print(list2)
+    
+#print(convert_difficulty(list2))
 # Function that get movie recommendations based on the cosine similarity score of movie genres
 def target_recommendations(title,sim):
     idx = indices[title]
