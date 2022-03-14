@@ -39,15 +39,17 @@ cosine_sim3 = (cosine_sim + cosine_sim2) / 2
 #print(cosine_sim)
 #print(movies['genres'])
 
+'''
 
-titles = exercises['Name']
-indices = pd.Series(exercises.index, index = exercises['Name'])
 #print(indices)
 arr = ['Cable Pull Through','Kettle Bell Swings','Pull-ups']
-'''
+
 exercises =  pd.read_csv('exercises2.csv')
 exercises = exercises.drop(columns=['Location', 'Push or Pull', 'Equipment Type( bar ,bodyweight, barbell , machine , kettlebell, dumbell , specific )'])
 print(exercises)
+titles = exercises['Name']
+indices = pd.Series(exercises.index, index = exercises['Name'])
+
 
 def create_cosine_similarities(categories,weight = None):
     if weight == None:
@@ -125,25 +127,27 @@ def convert_difficulty(aList):
         #print(element_list)
         return_list.append(element_list)
     return return_list
-
-
-print(create_cosine_similarities(['Target Area']))
+'''
+cosine_sim_1 = create_cosine_similarities(['Target Area'])
+print(cosine_sim_1)
 print('-------------------------------------')
 tfidf_matrix = tf.fit_transform(exercises['Target Area']) #gets if-idf values 
-cosine_sim = linear_kernel(tfidf_matrix, tfidf_matrix) #calculate a numeric quantity that denotes the similarity between two movies. Higher the cosine value, the more similar the terms are
-print(cosine_sim)
+cosine_sim1 = linear_kernel(tfidf_matrix, tfidf_matrix) #calculate a numeric quantity that denotes the similarity between two movies. Higher the cosine value, the more similar the terms are
+print(cosine_sim1)
 
 
 print('-------------------------------------')
-print(create_cosine_similarities(['Exercise Category'])[0])
+cosine_sim_2 = create_cosine_similarities(['Exercise Category'])
+print(cosine_sim_2 [0])
 print('-------------------------------------')
 tfidf_matrix = tf.fit_transform(exercises['Exercise Category']) #gets if-idf values 
-cosine_sim = linear_kernel(tfidf_matrix, tfidf_matrix) #calculate a numeric quantity that denotes the similarity between two movies. Higher the cosine value, the more similar the terms are
-print(cosine_sim[0])        
+cosine_sim2 = linear_kernel(tfidf_matrix, tfidf_matrix) #calculate a numeric quantity that denotes the similarity between two movies. Higher the cosine value, the more similar the terms are
+print(cosine_sim2[0])        
 
 
 print('-------------------------------------')
-print(create_cosine_similarities(['Difficulty'])[0])
+cosine_sim_3 = create_cosine_similarities(['Difficulty'])
+print(cosine_sim_3[0])
 print('-------------------------------------')
 theList = exercises['Difficulty'].tolist()
 #print(theList)
@@ -155,25 +159,27 @@ for x in theList:
     else:
         list2.append(x)
         #print(list2)
-cosine_sim = convert_difficulty(list2)
-print(cosine_sim[0])
+cosine_sim3 = convert_difficulty(list2)
+print(cosine_sim3[0])
     
 print('-------------------------------------')
-print(create_cosine_similarities(['Target Area','Exercise Category'],[0.5,0.5]))
+cosine_sim_4 = create_cosine_similarities(['Target Area','Exercise Category'],[0.5,0.5])
+print(cosine_sim_4)
 print('-------------------------------------')
 
 tfidf_matrix = tf.fit_transform(exercises['Target Area']) #gets if-idf values 
-cosine_sim = linear_kernel(tfidf_matrix, tfidf_matrix)
+cosine_sim_sum1 = linear_kernel(tfidf_matrix, tfidf_matrix)
 tfidf_matrix = tf.fit_transform(exercises['Exercise Category']) #gets if-idf values 
-cosine_sim2 = linear_kernel(tfidf_matrix, tfidf_matrix)
+cosine_sim_sum2 = linear_kernel(tfidf_matrix, tfidf_matrix)
 
-cosine_sim3 = (cosine_sim + cosine_sim2) / 2
-print(cosine_sim3)
+cosine_sim4 = (cosine_sim_sum1 + cosine_sim_sum2) / 2
+print(cosine_sim4)
 print('-------------------------------------')
+
 print(create_cosine_similarities(['Target Area','Exercise Category']))
 arr = [93,367,8]
 
-
+'''
 #print(exercises['Difficulty'])
 #print(type(exercises['Difficulty'].tolist()))
 #print(type(['Difficulty']))
@@ -230,4 +236,22 @@ print(target_recommendations('Deadlift',cosine_sim))
 print(target_recommendations('Deadlift',cosine_sim2))
 '''
 
+print(target_recommendations('Deadlift',create_cosine_similarities(['Target Area'])))
+print(target_recommendations('Deadlift',create_cosine_similarities(['Exercise Category'])))
+print(target_recommendations('Deadlift',create_cosine_similarities(['Difficulty'])))
+print(target_recommendations('Deadlift',create_cosine_similarities(['Target Area','Exercise Category'],[0.5,0.5])))
+print(target_recommendations('Deadlift',create_cosine_similarities(['Target Area','Exercise Category'])))
+'''
+print(target_recommendations('Deadlift',cosine_sim1))
+print(target_recommendations('Deadlift',cosine_sim_1))
+
+print(target_recommendations('Deadlift',cosine_sim2))
+print(target_recommendations('Deadlift',cosine_sim_2))
+
+print(target_recommendations('Deadlift',cosine_sim3))
+print(target_recommendations('Deadlift',cosine_sim_3))
+
+print(target_recommendations('Deadlift',cosine_sim4))
+print(target_recommendations('Deadlift',cosine_sim_4))
+'''
 #print(give_set_recommendations('Deadlift'))
