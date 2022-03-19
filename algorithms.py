@@ -47,6 +47,7 @@ arr = ['Cable Pull Through','Kettle Bell Swings','Pull-ups']
 '''
 exercises =  pd.read_csv('exercises2.csv')
 exercises = exercises.drop(columns=['Location', 'Push or Pull', 'Equipment Type( bar ,bodyweight, barbell , machine , kettlebell, dumbell , specific )'])
+exercises[exercises.columns] = exercises.apply(lambda x: x.str.rstrip())
 print(exercises)
 
 def create_cosine_similarities(categories,weight = None):
@@ -229,5 +230,42 @@ def give_set_recommendations(title,sim):
 print(target_recommendations('Deadlift',cosine_sim))
 print(target_recommendations('Deadlift',cosine_sim2))
 '''
+
+list_of_excercises = pd.read_csv('listExercises.csv')#read exercise list
+list_of_excercises = list_of_excercises.applymap(lambda x: x.rstrip() if isinstance(x, str) else x)#get rid of trailing spaces
+#print(list_of_excercises)
+
+def getTop5ByRatings():
+    #print(list_of_excercises)
+    means = list_of_excercises.groupby(['Exercise']).mean()#group by excerise and get the means
+    #print(means.columns)
+    rating_descending = means.sort_values(by=['Rating'], ascending=False)#sort by the ratings in descending order
+    #print(lols['Exercise'][:5])
+    #print(rating_descending[:5])
+    top5_ratings_scores  = rating_descending['Rating'][:5]
+    #print(top5_ratings_scores)
+    
+    for x,y in zip(top5_ratings_scores.index,top5_ratings_scores):
+        print(x,y)
+    
+    return 
+
+
+
+def getTop5ByCount():
+    counts =  list_of_excercises.groupby(['Exercise']).size().reset_index(name='count')
+    #print(counts)
+    count_descending = counts.sort_values(by=['count'], ascending=False)#sort by the ratings in descending order
+    #print(count_descending)
+    top5_count = count_descending[:5]
+    
+    for x,y in zip(top5_count['Exercise'],top5_count['count']):
+        print(x,y)
+    
+    return 
+
+getTop5ByRatings()
+print('---------------')
+getTop5ByCount()
 
 #print(give_set_recommendations('Deadlift'))
