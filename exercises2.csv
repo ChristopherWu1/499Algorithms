@@ -1,32 +1,32 @@
 Name,Target Area,Target Muscle,Exercise Category,Difficulty,Location,Push or Pull,"Equipment Type( bar ,bodyweight, barbell , machine , kettlebell, dumbell , specific )"
-Back Squat,Lower Body,Quadriceps,Strength ,Beginner ,,Push,"bodyweight , barbell, kettlebell , dumbell"
-Front Squat,Lower Body,Quadriceps,Strength ,Intermediate ,,Push,"bodyweight , barbell, kettlebell , dumbell"
-Pause Squat,Lower Body,Quadriceps,Strength ,Intermediate,,Push,"bodyweight , barbell , kettlebell ,dumbell"
-Zercher Squat,Lower Body,Quadriceps,Strength ,Advanced,,Push,"bodyweight , barbell, kettlebell , dumbell"
-Split Squats,Lower Body,Quadriceps,Strength ,Advanced,,Push,"bodyweight , barbell, kettlebell , dumbell"
-Romanian Deadlift,Lower Body,Hamstrings,Strength ,Intermediate,,Push,"bodyweight , barbell, kettlebell , dumbell"
-Goblet Squat,Lower Body,Glutes,Strength ,Beginner ,,Push,"bodyweight , barbell, kettlebell , dumbell"
-Leg Press,Lower Body,Quadriceps,Strength ,Beginner ,,Push,machine
+Back Squat,Lower Body,Quadriceps,Strength,Beginner ,,Push,"bodyweight , barbell, kettlebell , dumbell"
+Front Squat,Lower Body,Quadriceps,Strength,Intermediate ,,Push,"bodyweight , barbell, kettlebell , dumbell"
+Pause Squat,Lower Body,Quadriceps,Strength,Intermediate,,Push,"bodyweight , barbell , kettlebell ,dumbell"
+Zercher Squat,Lower Body,Quadriceps,Strength,Advanced,,Push,"bodyweight , barbell, kettlebell , dumbell"
+Split Squats,Lower Body,Quadriceps,Strength,Advanced,,Push,"bodyweight , barbell, kettlebell , dumbell"
+Romanian Deadlift,Lower Body,Hamstrings,Strength,Intermediate,,Push,"bodyweight , barbell, kettlebell , dumbell"
+Goblet Squat,Lower Body,Glutes,Strength,Beginner ,,Push,"bodyweight , barbell, kettlebell , dumbell"
+Leg Press,Lower Body,Quadriceps,Strength,Beginner ,,Push,machine
 Deadlift,Full Body,Lower Back,Strength,Intermediate,,Pull,"barbell, kettlebell, dumbell "
 Cable Pull Through,Full Body,Lower Back,Strength,Beginner ,,Pull,machine
 Sumo Deadlifts,Full Body,Lower Back,Strength,Beginner ,,Pull,barbell
 Trap Bar Deadlift,Full Body,Lower Back,Strength,Beginner ,,Pull,trap bar
 Kettle Bell Swings,Full Body,Hamstrings,Strength,Intermediate,,Pull,kettlebell
-Barbell Row,Upper Body,Upper Back,Strength ,Intermediate,,Pull,barbell
-Pull-ups,Full Body,Upper Back,Strength ,Intermediate,,Pull,"bar, machine"
-Chin-ups,Full Body,Upper Back,Strength ,Intermediate,,Pull,"bar, machine"
-Face Pulls,Upper Body,Shoulders,Strength ,Beginner ,,Pull,machine
-T-bar Rows ,Upper Body,Upper Back,Strength ,Intermediate,,Pull,barbell
-Lat Pulldown,Upper Body,Upper Back,Strength ,Intermediate,,Pull,machine
-Bent Over Row,Upper Body,Upper Back,Strength ,Beginner ,,Pull,"barbell, kettlebell , dumbell"
-Bench Press ,Upper Body,Chest,Strength ,Beginner ,,Push,"barbell , dumbell"
-Incline Bench Press,Upper Body,Chest,Strength ,Beginner ,,Push,"barbell , dumbell"
-Overhead Press,Upper Body,Shoulder,Strength ,Beginner ,,Push,"barbell , dumbell, kettlebell"
-Push-ups,Upper Body,Chest,Strength ,Beginner ,,Push,bodyweight
-Dips,Core,Chest,Strength ,Beginner,,Push,"bodweight, machine, dumbell"
-Ab Wheel Rollouts,Core,Abdominals ,Strength ,Beginner ,,Push,ab-wheel
-Leg Raises,Core,Abdominals ,Strength ,Beginner ,,Pull,bodweight
-Bicep Curl,Upper Body,Bicep,Strength ,Beginner ,,Pull,"barbell, kettlebell , dumbell"
+Barbell Row,Upper Body,Upper Back,Strength,Intermediate,,Pull,barbell
+Pull-ups,Full Body,Upper Back,Strength,Intermediate,,Pull,"bar, machine"
+Chin-ups,Full Body,Upper Back,Strength,Intermediate,,Pull,"bar, machine"
+Face Pulls,Upper Body,Shoulders,Strength,Beginner ,,Pull,machine
+T-bar Rows ,Upper Body,Upper Back,Strength,Intermediate,,Pull,barbell
+Lat Pulldown,Upper Body,Upper Back,Strength,Intermediate,,Pull,machine
+Bent Over Row,Upper Body,Upper Back,Strength,Beginner ,,Pull,"barbell, kettlebell , dumbell"
+Bench Press ,Upper Body,Chest,Strength,Beginner ,,Push,"barbell , dumbell"
+Incline Bench Press,Upper Body,Chest,Strength,Beginner ,,Push,"barbell , dumbell"
+Overhead Press,Upper Body,Shoulder,Strength,Beginner ,,Push,"barbell , dumbell, kettlebell"
+Push-ups,Upper Body,Chest,Strength,Beginner ,,Push,bodyweight
+Dips,Core,Chest,Strength,Beginner,,Push,"bodweight, machine, dumbell"
+Ab Wheel Rollouts,Core,Abdominals ,Strength,Beginner ,,Push,ab-wheel
+Leg Raises,Core,Abdominals ,Strength,Beginner ,,Pull,bodweight
+Bicep Curl,Upper Body,Bicep,Strength,Beginner ,,Pull,"barbell, kettlebell , dumbell"
 Walking,Full Body,Lungs,Aerobic,Beginner ,,,"machine, none"
 Jogging,Full Body,Lungs,Aerobic,Beginner ,,,"machine, none"
 Running,Full Body,Lungs,Aerobic,Beginner ,,,"machine, none"
@@ -36,29 +36,28 @@ Biking,Full Body,Lungs,Aerobic,Beginner ,,,bike
 Stairmaster,Full Body,Lungs,Aerobic,Beginner ,,,machine
 Jump Rope,Full Body,Lungs,Aerobic,Beginner ,,,jump rope
 Rowing,Full Body,Lungs,Aerobic,Beginner ,,Pull,machine
-Knees to Chest,Lower Body,Hamstrings,Flexibility ,Beginner,,,bodyweight
-Standing Quad Stretch,Lower Body,Quadriceps,Flexibility ,Beginner,,,bodyweight
-Forward Lunge,Lower Body,Quadriceps,Flexibility ,Beginner,,,bodyweight
-"Side Lunge
-",Lower Body,Hamstrings,Flexibility ,Beginner,,,bodyweight
-Cross-Over,Lower Body,Hamstrings,Flexibility ,Beginner,,,bodyweight
-Seat Straddle Lotus,Lower Body,Hamstrings,Flexibility ,Beginner,,,bodyweight
-Piriformis Stretch,Lower Body,Glutes,Flexibility ,Beginner,,,bodyweight
-Figure Four Stretch,Lower Body,Glutes,Flexibility ,Beginner,,,bodyweight
+Knees to Chest,Lower Body,Hamstrings,Flexibility,Beginner,,,bodyweight
+Standing Quad Stretch,Lower Body,Quadriceps,Flexibility,Beginner,,,bodyweight
+Forward Lunge,Lower Body,Quadriceps,Flexibility,Beginner,,,bodyweight
+Side Lunge,Lower Body,Hamstrings,Flexibility,Beginner,,,bodyweight
+Cross-Over,Lower Body,Hamstrings,Flexibility,Beginner,,,bodyweight
+Seat Straddle Lotus,Lower Body,Hamstrings,Flexibility,Beginner,,,bodyweight
+Piriformis Stretch,Lower Body,Glutes,Flexibility,Beginner,,,bodyweight
+Figure Four Stretch,Lower Body,Glutes,Flexibility,Beginner,,,bodyweight
 Tricep Stretch,Upper Body,Tricep,Flexibility ,Beginner,,,bodyweight
 Frog Stretch,Lower Body,Hamstrings,Flexibility ,Beginner,,,bodyweight
-Butterfly Stretch,Lower Body,Hamstrings,Flexibility ,Beginner,,,bodyweight
-Side Bend Stretch,Lower Body,Abdominals ,Flexibility ,Beginner,,,bodyweight
-Pectoral Stretch,Upper Body,Chest,Flexibility ,Beginner,,,bodyweight
-Lying Quad Stretch,Lower Body,Quadriceps,Flexibility ,Beginner,,,bodyweight
-Pigeon Pose ,Lower Body,Glutes,Flexibility ,Beginner,,,bodyweight
-Pretzel Stretch,Lower Body,Glutes,Flexibility ,Beginner,,,bodyweight
-Downward Dog,Full Body,Lower Back,Flexibility ,Beginner,,,bodyweight
-Cat Cow,Full Body,Lower Back,Flexibility ,Beginner,,,bodyweight
-Plank,Full Body,Abdominals ,Strength ,Beginner,,,bodyweight
-Side Plank,Full Body,Abdominals ,Strength ,Intermediate,,,bodyweight
-Elephant Walk,Lower Body,Quadriceps,Flexibility ,Beginner ,,,
-Bird Dog,Upper Body,Upper Back,Flexibility ,Intermediate,,,bodyweight
+Butterfly Stretch,Lower Body,Hamstrings,Flexibility,Beginner,,,bodyweight
+Side Bend Stretch,Lower Body,Abdominals ,Flexibility,Beginner,,,bodyweight
+Pectoral Stretch,Upper Body,Chest,Flexibility,Beginner,,,bodyweight
+Lying Quad Stretch,Lower Body,Quadriceps,Flexibility,Beginner,,,bodyweight
+Pigeon Pose ,Lower Body,Glutes,Flexibility,Beginner,,,bodyweight
+Pretzel Stretch,Lower Body,Glutes,Flexibility,Beginner,,,bodyweight
+Downward Dog,Full Body,Lower Back,Flexibility,Beginner,,,bodyweight
+Cat Cow,Full Body,Lower Back,Flexibility,Beginner,,,bodyweight
+Plank,Full Body,Abdominals ,Strength,Beginner,,,bodyweight
+Side Plank,Full Body,Abdominals ,Strength,Intermediate,,,bodyweight
+Elephant Walk,Lower Body,Quadriceps,Flexibility,Beginner ,,,
+Bird Dog,Upper Body,Upper Back,Flexibility,Intermediate,,,bodyweight
 Chest Fly,Upper Body,Chest,Strength,Advanced,,,
 Suitcase Carry,Upper Body,Bicep,Strength,Advanced,,,
 Shrugs,Upper Body,Upper Back,Strength,Advanced,,,
